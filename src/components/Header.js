@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaRegPlayCircle } from 'react-icons/fa';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,26 +64,27 @@ const Header = () => {
             >
               Cancel
             </button>
-          </div>
-          
-        {(isMenuOpen &&
-          <nav className="hidden md:flex space-x-6 md:ml-8">
+            {isMenuOpen && (
+            <nav className="hidden md:flex space-x-6 md:ml-8">
           <ul className="flex space-x-4 pt-5">
+          <li className="mb-4">
+        <span className="block text-lg font-semibold leading-6 text-left text-slate-50 hover:text-gray-200">Home</span>
+      </li>
             <li className="mb-4">
-              <span className="block text-lg font-semibold leading-6 text-left hover:text-gray-200">Home</span>
+              <span href="#" className="block text-lg font-semibold leading-6 text-white text-left hover:text-gray-200">Products</span>
             </li>
             <li className="mb-4">
-              <span href="#" className="block text-lg font-semibold leading-6 text-left hover:text-gray-200">Products</span>
+              <span href="#" className="block text-lg font-semibold leading-6 text-white text-left hover:text-gray-200">Resources</span>
             </li>
             <li className="mb-4">
-              <span href="#" className="block text-lg font-semibold leading-6 text-left hover:text-gray-200">Resources</span>
-            </li>
-            <li className="mb-4">
-              <span href="#" className="block text-lg font-semibold leading-6 text-left hover:text-gray-200">Pricing</span>
+              <span href="#" className="block text-lg font-semibold leading-6 text-white text-left hover:text-gray-200">Pricing</span>
             </li>
           </ul>
         </nav>
-        )}
+            )}
+          </div>
+          
+       
         </div>
         
        
