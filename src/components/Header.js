@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaRegPlayCircle } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Header = () => {
         <span className="flex justify-center w-11 h-11 rounded-tl-lg bg-gradient-to-b from-white to-gray-200 border border-gray-300 border-opacity-20">
              <p className="rounded-full w-10 h-10 top-8 left-8 bg-gradient-to-br from-purple-700 to-purple-900"></p>
         </span>
-          <h1 className="text-2xl font-bold pl-4">Untitled UI</h1> {/* Added pl-4 for spacing */}
+          <h1 className="text-xl font-bold ">Untitled UI</h1> 
        
         <nav className="hidden md:flex space-x-6 md:ml-8">
             <ul className="flex  space-x-4 pt-5">
@@ -65,6 +66,7 @@ const Header = () => {
             </button>
           </div>
           
+        {(isMenuOpen &&
           <nav className="hidden md:flex space-x-6 md:ml-8">
           <ul className="flex space-x-4 pt-5">
             <li className="mb-4">
@@ -81,8 +83,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        )}
         </div>
-
+        
        
       </div>
      
@@ -97,7 +100,7 @@ const Header = () => {
          </div>
 
          <div className="h-auto p-16 gap-16">
-          <div className="w-auto h-auto p-2 pl-4 pr-10 rounded-tl-lg border-l-0 border-t-0 border-r-0 border-b-0 gap-4 flex">
+          <div className="w-auto h-auto p-2 pl-4 pr-10 rounded-tl-lg border-l-0 border-t-0 border-r-0 border-b-0 gap-4 flex items-center justify-center">
             <button className="text-xs font-medium text-center text-purple-700 px-6 py-2 bg-slate-100 rounded-md">New feature</button>
             <div className="w-auto h-auto gap-4">
               <button className="text-xs font-medium text-center text-purple-700">Check out the team dashboard</button>
@@ -107,13 +110,13 @@ const Header = () => {
         <h1 className='text-4xl font-semibold leading-tight tracking-tighter text-center'>Beautiful analytics to grow smarter</h1>
         <p className='text-lg font-normal leading-7 text-center text-gray-400'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
         </div>
-        <div className='mt-6'>
-          <button className='bg-purple-700 text-white w-full h-auto p-4 pl-6 pr-6 rounded-lg border-l-1 border-t-0 border-r-0 border-b-0  gap-4'>SignUp</button>
-          <button className='text-black mt-5 bg-white w-full h-auto p-4 pl-6 pr-6 rounded-lg border-l-1 border-t-1 border-r-1 border-b-1  gap-4'>Demo</button>
+        <div className='mt-6 md:flex md:justify-center md:items-center md:ml-36'>
+          <button className='md:w-[150px] md:h-[50px] bg-purple-700 text-white w-full h-auto p-4 pl-6 pr-6 rounded-lg border-l-1 border-t-0 border-r-0 border-b-0  gap-4'>SignUp</button>
+            <button className='md:w-[150px] md:h-[50px] text-black mt-5 bg-white w-full h-auto p-4 pl-6 pr-6 rounded-lg border-l-0 border-t-0 border-r-0 border-b-0  gap-4 text-center'> Demo</button>
+        
         </div>
-
-        <div className='w-96 h-56 rounded-lg  border-4 border-gray-800 ml-10'>
-            <img src='https://s3-alpha-sig.figma.com/img/081a/4c6e/48bee3c577d90c805ebc6abe73e441d3?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lCxh4HkZRzbhpDbBiKOIV4mTVjBzbRQEgg268Lidl98wjBj2Wy~HFf38IOf9bSiu024iK11vw3bUThEXuZ1EQr8iz-d-A4lLP-0H5WdFF6f1~FGYO8TdmSq8X8uhKk7MXZmGd9oJtb--Sn5YpNWO6FkIg6sC3THVqXfMJwv9sHOIQZws8bYk~bAfEOG-hPecEulCPusFJ7JQfkyZ8hSv6Oi-G9JQEPBe2TSYX2hyoLVsiIAKdTdg0pm0op5iMX6ml4REkX712ytyjD~BCK6NNofR~KEXKn0GMvp344Se4FUDbdCaGJiKqJXObLSTQrYQiYwf8fY9YuAH0Z6NB4gPUA' alt='alter' className='w-96 h-56 rounded-lg' />
+        <div className='md:w-[900px] md:h-[500px] w-96 h-56 rounded-lg  border-4 border-gray-800 items-center ml-6 md:mt-10 md:flex md:justify-center md:ml-56 '>
+            <img src='https://s3-alpha-sig.figma.com/img/081a/4c6e/48bee3c577d90c805ebc6abe73e441d3?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lCxh4HkZRzbhpDbBiKOIV4mTVjBzbRQEgg268Lidl98wjBj2Wy~HFf38IOf9bSiu024iK11vw3bUThEXuZ1EQr8iz-d-A4lLP-0H5WdFF6f1~FGYO8TdmSq8X8uhKk7MXZmGd9oJtb--Sn5YpNWO6FkIg6sC3THVqXfMJwv9sHOIQZws8bYk~bAfEOG-hPecEulCPusFJ7JQfkyZ8hSv6Oi-G9JQEPBe2TSYX2hyoLVsiIAKdTdg0pm0op5iMX6ml4REkX712ytyjD~BCK6NNofR~KEXKn0GMvp344Se4FUDbdCaGJiKqJXObLSTQrYQiYwf8fY9YuAH0Z6NB4gPUA' alt='alter' className='w-96 h-56 md:w-[890px] md:h-[490px] rounded-lg' />
         </div>
      
      </div>

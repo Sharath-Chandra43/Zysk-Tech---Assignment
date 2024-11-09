@@ -5,12 +5,13 @@ const BlogSection = () => {
   return (
     <div className="w-full">
     <h2 className="text-xl font-sans text-purple-600 mb-4 ml-3 text-left">Our Blog</h2>
-    <div className="space-y-4">
+    <div className="space-y-4 flex justify-between">
         <div className="bg-white rounded-lg shadow-md p-6 text-left">
             <div>
             <h1 className='text-bold text-2xl font-bold font-sans'>Lastest blog posts</h1>
             <h3 className="text-lg text-gray-400 mb-2">Tool and strategies modern teams need to help their companies grow.</h3>
             </div>
+        <div className='md:grid md:grid-cols-3'>
         <div className='flex flex-col mt-8'>
             <img src='https://s3-alpha-sig.figma.com/img/92f9/d44d/896aad9fd5981c841633a846ddb6994b?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ilSuag86s-4bHROY2s4ehp7e0qsHudYd0U460ewFwBw76NdxJ0VDzjibpT5mQF92Tfr6pcVDmX-dJL6KnTm0TNrOtXeQg1d~mlODANgzJSqgxC9Iu4sFeNm5H1hiLdR4Xx456zOpnUYrsyxPrPWkt48XdjG0r2x6VSLwaD0B82VHXEBbqWcMAE0ePTYI2FrYq1HKMzCyXTMc8M4FpJ8Io2S57FQ46ZFcPIUR8OtTJIGZtAueVWqPHLhPZosaweqvIKlbC26~YNV41NY~uhWF4PyYPRlwdamv~mGhmUXNbkwUcB39KZmmXYl6PKDbKasPnXQ0CSeCrgsBi3K5km610Q' alt='blog' className='w-96 h-80' />
             <div className='w-full h-auto gap-8 mt-8'>
@@ -68,7 +69,7 @@ const BlogSection = () => {
             </div>
 
         </div>
-            
+        </div>
             
         
         <div className="text-center mt-4">
