@@ -14,7 +14,7 @@ const TestimonialSection = () => {
         </div>
 
         <div>
-            <img src='https://s3-alpha-sig.figma.com/img/fcd7/e604/94e98ef4a34b3228a1783b7f500b0df6?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z5nn27swxAsGqmOi34~sN0fh8AouNKkxSCreVglokY1iR84Sbk4qicM87bTEyeFYLBl2pIODfasT-jRFbeDKfGscx49hBL84rM89DFOsJ9GYstIc3Rf3iAdbNBuGURQn3n1vfrRCQSyAA69pHK7WzdWyBAMTApGeYmj97eKGB05z4N6UMvWqCQsTW4MkP2I1ZQv0e5glrFRRsQlxOkXRdnOoy-SCtfdBqQRZ5f2KFsF8kQPCMOaMb4sxE-3qXU5KWXieCwdXV8VVwqQMjKAZ25qtPADUSu~KQ-cs2q67w5hR60Ppqs064SW0uMqodJKszOmQdzsGDhCJBicHUQOR1w'className='w-10 h-10 ml-36'  alt='avatar'/>
+            <img src='https://s3-alpha-sig.figma.com/img/fcd7/e604/94e98ef4a34b3228a1783b7f500b0df6?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z5nn27swxAsGqmOi34~sN0fh8AouNKkxSCreVglokY1iR84Sbk4qicM87bTEyeFYLBl2pIODfasT-jRFbeDKfGscx49hBL84rM89DFOsJ9GYstIc3Rf3iAdbNBuGURQn3n1vfrRCQSyAA69pHK7WzdWyBAMTApGeYmj97eKGB05z4N6UMvWqCQsTW4MkP2I1ZQv0e5glrFRRsQlxOkXRdnOoy-SCtfdBqQRZ5f2KFsF8kQPCMOaMb4sxE-3qXU5KWXieCwdXV8VVwqQMjKAZ25qtPADUSu~KQ-cs2q67w5hR60Ppqs064SW0uMqodJKszOmQdzsGDhCJBicHUQOR1w'className='w-10 h-10 ml-40'  alt='avatar'/>
             <h1 className='font-bold text-black'>Candice Wc</h1>
             <p className='text-gray-400'>Product Manager, Sisyphus</p>
         </div>
