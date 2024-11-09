@@ -51,41 +51,24 @@ const Header = () => {
         </button>
 
         {/* Mobile menu content (right-sided) */}
-        <div
-          className={`fixed right-0 top-0 w-full h-full bg-gray-900 bg-opacity-75 z-50 transition duration-300 ease-in-out ${
-            isMenuOpen ? 'translate-x-0' : '-translate-x-full'
-          } md:hidden`}
-        >
-          <div className="flex justify-between items-center p-4">
-            <h2 className="text-white text-lg font-bold">Menu</h2>
-            <button
-              className="text-white hover:text-gray-200"
-              onClick={toggleMenu}
-            >
-              Cancel
-            </button>
-            {isMenuOpen && (
-            <nav className="hidden md:flex space-x-6 md:ml-8">
-          <ul className="flex space-x-4 pt-5">
-          <li className="mb-4">
-        <span className="block text-lg font-semibold leading-6 text-left text-slate-50 hover:text-gray-200">Home</span>
-      </li>
-            <li className="mb-4">
-              <span href="#" className="block text-lg font-semibold leading-6 text-white text-left hover:text-gray-200">Products</span>
-            </li>
-            <li className="mb-4">
-              <span href="#" className="block text-lg font-semibold leading-6 text-white text-left hover:text-gray-200">Resources</span>
-            </li>
-            <li className="mb-4">
-              <span href="#" className="block text-lg font-semibold leading-6 text-white text-left hover:text-gray-200">Pricing</span>
-            </li>
-          </ul>
-        </nav>
-            )}
-          </div>
-          
-       
+        <div className={`fixed right-0 top-0 w-full h-full bg-gray-900 bg-opacity-75 z-50 transition duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
+  <div className="flex flex-col justify-end items-end  p-4">
+        <button className="text-white hover:text-gray-200" onClick={toggleMenu}>
+          Cancel
+        </button>
         </div>
+<div className='flex justify-start items-start'>
+    <nav className="flex flex-col ml-7 space-y-4">
+      <a href="#" className="block text-lg font-semibold leading-6 text-slate-50 hover:text-gray-200">Home</a>
+      <a href="#" className="block text-lg font-semibold leading-6 text-slate-50 hover:text-gray-200">Products</a>
+      <a href="#" className="block text-lg font-semibold leading-6 text-slate-50 hover:text-gray-200">Resources</a>
+      <a href="#" className="block text-lg font-semibold leading-6 text-slate-50 hover:text-gray-200">Pricing</a>
+    </nav>
+  </div>
+  </div>
+
+ 
+
         
        
       </div>
